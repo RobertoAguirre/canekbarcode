@@ -1,0 +1,7 @@
+{
+  "name": "iRestaurante",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
