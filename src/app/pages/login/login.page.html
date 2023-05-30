@@ -1,0 +1,39 @@
+<ion-header>
+</ion-header>
+
+<!-- scrollY="false" to stop scrolling -->
+<ion-content>
+  <div class="image-container">
+    <ion-img src="assets/images/loginHeader.jpeg" alt="HeaderImg"></ion-img>
+    <div class="logo-overlay">
+      <img src="assets/images/Blank_Square.svg" alt="Logo">
+    </div>
+  </div>
+
+  
+  <ion-grid class="ion-padding">
+    <ion-row>
+      <ion-col size="12" size-md="8" offset-md="2" size-lg="6" offset-lg="3">
+        <div class="login-form">
+
+          <h2><ion-icon name="person-outline"></ion-icon> Username</h2>
+          <form>
+            <ion-item lines="none">
+              <!-- <ion-label position="floating"></ion-label> -->
+              <ion-input type="text" style="color: black; text-align: center;"></ion-input>
+            </ion-item>
+            <h2><ion-icon name="lock-closed-outline"></ion-icon> Password</h2>
+            <ion-item lines="none">
+              <!-- <ion-label position="floating"></ion-label> -->
+              <ion-input type="password" style="color: black; text-align: center;"></ion-input>
+            </ion-item>
+            <ion-button  class="gbutton" type="submit">Login</ion-button>
+            <div class="signup-link">
+              <p>Don't have an account? <br> Sign up <ion-button size="small" class="clearButton" fill="clear" routerLink="/signup"> here</ion-button></p>
+            </div>
+          </form>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

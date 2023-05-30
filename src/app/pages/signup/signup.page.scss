@@ -1,0 +1,74 @@
+ion-content {
+    --background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)); 
+    background-image: url(../../../assets/images/signupImg.jpg);
+    background-repeat: no repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+ion-img {
+    width: 100%;
+    height: 33vh;
+    object-fit: cover;
+  }
+  
+
+ion-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-form {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto; /* Add this line to center the form horizontally */
+    margin-top: 2vh; /* Adjust the margin-top value to vertically center the form */
+  }
+
+  
+  h2 {
+    text-align: center;
+  }
+  
+  ion-item {
+    margin-bottom: 30px;
+    --border-radius: 10px;
+    --background: rgb(255, 255, 255);
+    
+  }
+  
+  .gbutton {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    --border-radius: 60px !important;
+    --background: rgb(203, 243, 89, 0.82);
+    width: 50%;
+  }
+  
+  .clearButton {
+    justify-content: left;
+    color: #60B8F9;
+    // text-decoration: none;
+    // font-size: 1rem;
+    --height: 1px;
+
+  }
+  
+  .no-scroll{
+    overflow: hidden;
+  }
+
+  .logo-container {
+    text-align: center;
+  }
+  
+  .logo-image {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Add space between the logo and the heading */
+  }
