@@ -14,7 +14,20 @@ const routes: Routes = [
   {
     path: 'signup',
     loadChildren: () => import('./pages/signup/signup.module').then( m => m.SignupPageModule)
+  },  {
+    path: 'order-selection',
+    loadChildren: () => import('./pages/order-selection/order-selection.module').then( m => m.OrderSelectionPageModule)
   },
+  {
+    path: 'main-screen',
+    loadChildren: () => import('./pages/main-screen/main-screen.module').then( m => m.MainScreenPageModule)
+  },
+  {
+    path: 'item-information',
+    loadChildren: () => import('./pages/item-information/item-information.module').then( m => m.ItemInformationPageModule)
+  },
+
+
 ];
 
 @NgModule({
