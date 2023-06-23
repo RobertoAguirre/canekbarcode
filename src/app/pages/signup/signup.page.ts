@@ -39,14 +39,14 @@ export class SignupPage implements OnInit {
         lastName: params.lastName,
         password: CryptoJS.AES.encrypt(params.password, 'lxgJMPRqhU').toString(),
 
-      }).subscribe(
-        response => {
-          if (response?.success) {
-            this.router.navigate(['/login'])
-          }
-          else {}
+      }).subscribe({
+        next: (result) => {
+          this.router.navigate(['/login'], {replaceUrl: true})
         },
-      )
+        error: (error) => {
+          throw new Error(error)
+        }
+      })
     } else console.log('Campos erróneos', this.errorControl);
 
   }
