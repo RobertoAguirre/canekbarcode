@@ -19,7 +19,6 @@ const routes: Routes = [
   {
     path: 'order-selection',
     loadChildren: () => import('./pages/order-selection/order-selection.module').then( m => m.OrderSelectionPageModule),
-    canActivate: [AuthGuard]
   },
   {
     path: 'main-screen',
